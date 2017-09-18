@@ -17,31 +17,32 @@ Garden
 
 This implementation uses the Facebook babi dataset and can be trained on 20 different types of tasks like counting, reasoning, induction, deduction, path-finding, etc.
 
-* - need to try 0.01
+Below are the test accuracies of the model on the 20 tasks:
  
 |Task ID|Score in original paper|My score|
 |---|---|---|
-|   1|   |  100 |
-|   2|   |  83.8 |
-|   3|   |   |*
-|   4|   |100|
-|   5|   |98.7|
+|   1|   100|  100 |
+|   2|   99.7|  83.8 |
+|   3|   98.9|56.1|
+|   4|   100|100|
+|   5|   99.5|98.7|
+|   6|   100|100|
+|   7|   97.6|92.9| 
+|   8|   100|TODO|
+|   9|   100|100|
+|  10|   100|99.9|
+|  11|   100| 100|
+|  12|   100|   100|
+|  13|   100|   100|
+|  14|   99.8|   91.2|
+|  15|   100|   100|
+|  16|   54.7|  45.8 |
+|  17|   95.8|   59.9|
+|  18|   97.9|  89.4 |
+|  19|   100|  TODO |
+|  20|   100|  100 |
 
-
-|   6|   |98.1|*
-|   7|   |92.9| 
-|   8|   |   error|
-|   9|   |100|
-|  10|  |99.8|*
-|  11|   | 99.6|*
-|  12|   |   100|
-|  13|   |   99.8|*
-|  14|   |   82.1|*
-|  15|   |   99.9|*
-|  16|   |  44.7 |*
-|  17|   |   61.4|*
-|  18|   |  89.4 |
-|  19|   |  error |
-|  20|   |  100 |
-
-For the future:Try and make DMN work with real-world text, like Wikipedia data. Find a use case for this architecture.
+For the future: 
+- Implement AttnGRU for the Episodic Memory Module
+- Try and make DMN work with real-world text, like Wikipedia data. Find a use case for this architecture.
+- Implement DMN-powered chatbot
